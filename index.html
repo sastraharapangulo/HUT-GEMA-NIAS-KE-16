@@ -82,13 +82,14 @@
     </script>
 
     <script>
-      var name = document.getElementById("name");
+      var names = document.getElementById("name");
       window.onload = function () {
         try {
           var url_string = window.location.href;
           var url = new URL(url_string);
-          var nameUrl = url.searchParams.get("name");
-          name.innerHTML = nameUrl;
+          var name = url.searchParams.get("name");
+          names.innerHTML = name;
+          console.log(name);
         } catch (err) {
           console.log("Issues with Parsing URL Parameter's - " + err);
         }
