@@ -134,7 +134,7 @@ body {
 }
 
 .acara .card img {
-  width: 50px;
+  max-width: 50px;
 }
 
 .acara .card {
